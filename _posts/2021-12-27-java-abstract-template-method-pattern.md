@@ -19,4 +19,91 @@ sidebar:
 </ul>
 </div>
 
-### 출처 [한번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online.]
+## Car 클래스(추상)
+```java
+public abstract class Car {
+	
+	public abstract void drive();
+	public abstract void stop();
+	
+	public void startCar() {
+		System.out.println("시동을 켭니다.");
+	}
+	
+	public void turnOff() {
+		System.out.println("시동을 끕니다.");
+	}
+
+    // 코드의 흐름(시나리오)를 여기서 정의
+    // 하위클래스에서 재정의를 막기위해 final로 선언
+	final public void run() {
+		startCar();
+		drive();
+		stop();
+		turnOff();
+	}
+}
+```
+
+## AICar 클래스(Car 클래스 상속)
+```java
+public class AICar extends Car{
+    @Override
+    public void drive() {
+        System.out.println("자율 주행합니다.");
+        System.out.println("자동차가 스스로 방향을 바꿉니다.");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("스스로 멈춥니다.");		
+    }
+}
+```
+
+## ManualCar 클래스(Car 클래스 상속)
+```java
+public class ManualCar extends Car{
+	@Override
+	public void drive() {
+		System.out.println("사람이 운전합니다.");
+		System.out.println("사람이 핸들을 조작합니다.");		
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("브레이크를 밟아서 정지합니다.");		
+	}
+}
+```
+
+## CarTest 클래스
+```java
+public class CarTest {
+
+	public static void main(String[] args) {
+		
+		Car aiCar = new AICar();
+		aiCar.run();
+        /*
+        시동을 켭니다.
+        자율 주행합니다.
+        자동차가 스스로 방향을 바꿉니다.
+        스스로 멈춥니다.
+        시동을 끕니다.
+        */
+		
+		Car manualCar = new ManualCar();
+		manualCar.run();
+        /*
+        시동을 켭니다.
+        사람이 운전합니다.
+        사람이 핸들을 조작합니다.
+        브레이크를 밟아서 정지합니다.
+        시동을 끕니다.
+        */
+	}
+}
+```
+
+###### 출처 [패스트 캠퍼스 - 한번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online.]
