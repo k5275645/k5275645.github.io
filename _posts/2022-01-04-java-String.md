@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "String"
+title: "Java - String"
 categories: java
 tag: [java, String]
 toc: true
@@ -64,3 +64,4 @@ System.out.println(System.identityHashCode(builder)); // 474675244
 System.out.println(builder.toString()); // abcdef
 ```
 
+> 출처 [패스트 캠퍼스 - 한번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online.](https://fastcampus.co.kr/dev_online_javaend)

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Data Structure"
+title: "Java - Data Structure"
 categories: java
 tag: [java, Data Structure]
 toc: true
@@ -26,4 +26,6 @@ sidebar:
         - 정점(vertex) : 여러 특성을 가지는 객체, 노드(node)
         - 간선edge() : 이 객체들을 연결 관계를 나타냄. 링크(link)
     - **해싱 (Hashing)** : 자료를 검색하기 위한 자료 구조
+
+> 출처 [패스트 캠퍼스 - 한번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online.](https://fastcampus.co.kr/dev_online_javaend)
     
