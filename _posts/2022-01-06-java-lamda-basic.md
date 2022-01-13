@@ -77,3 +77,5 @@ public static void main(String[] args) {
     System.out.println(max.getMax(10, 20));// 인터페이스 자료형 변수로 함수 호출
 }
 ```
+
+> 출처 [패스트 캠퍼스 - 한번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online.](https://fastcampus.co.kr/dev_online_javaend)
