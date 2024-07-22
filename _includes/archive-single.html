@@ -1,6 +1,6 @@
 {% if include.show_thumbnail and post.header.teaser %}
-  <div class="archive__item-teaser">
-    <img src="{{ post.header.teaser | relative_url }}" alt="">
+  <div class="archive__item-teaser" style="max-width: 250px;">
+    <img src="{{ post.header.teaser | relative_url }}" alt="" tyle="width: 100%; height: auto;">
   </div>
 {% endif %}
 
