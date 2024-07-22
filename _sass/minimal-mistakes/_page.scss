@@ -516,54 +516,112 @@ body {
    Related
    ========================================================================== */
 
-.page__related {
-  @include clearfix();
-  float: inline-start;
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid $border-color;
-
-  @include breakpoint($large) {
-    float: inline-end;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+   .page__related-title {
+    margin-bottom: 10px;
+    font-size: $type-size-6;
+    text-transform: uppercase;
   }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
-.page__related-title {
-  margin-bottom: 10px;
-  font-size: $type-size-6;
-  text-transform: uppercase;
-}
-
-.grid__wrapper {
-  display: block;
-}
-
-.grid__wrapper .grid__item {
-  margin-bottom: 20px;
-}
-
-/*
-   Wide Pages
-   ========================================================================== */
-
-.wide {
-  .page, .page__related {
+  
+  .page__related {
+    @include clearfix();
+    float: left;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid $border-color;
+  
     @include breakpoint($large) {
-      padding-inline-end: 0;
+      float: none;
+      width: 100%;
+      padding-left: 1em;
+      padding-right: 1em;
     }
-
-    @include breakpoint($x-large) {
-      padding-inline-end: 0;
+  
+    & .grid__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      @include breakpoint($large) {
+        margin: 0 -10px;
+      }
+  
+      .archive__item {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+  
+        @include breakpoint($medium) {
+          width: calc(33.3333% - 20px);
+        }
+  
+        @include breakpoint($large) {
+          width: calc(25% - 20px);
+        }
+      }
     }
   }
-}
+  
+  /*
+     Wide Pages
+     ========================================================================== */
+  
+  .wide {
+    .page,
+    .page__related {
+      @include breakpoint($large) {
+        padding-inline-end: 0;
+        padding-inline-start: 0;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      @include breakpoint($x-large) {
+        padding-inline-end: 0;
+        padding-inline-start: 0;
+      }
+    }
+  }
+
+// .page__related {
+//   @include clearfix();
+//   float: inline-start;
+//   margin-top: 2em;
+//   padding-top: 1em;
+//   border-top: 1px solid $border-color;
+
+//   @include breakpoint($large) {
+//     float: inline-end;
+//     width: calc(100% - #{$right-sidebar-width-narrow});
+//   }
+
+//   @include breakpoint($x-large) {
+//     width: calc(100% - #{$right-sidebar-width});
+//   }
+
+//   a {
+//     color: inherit;
+//     text-decoration: none;
+//   }
+// }
+
+// .page__related-title {
+//   margin-bottom: 10px;
+//   font-size: $type-size-6;
+//   text-transform: uppercase;
+// }
+
+// /*
+//    Wide Pages
+//    ========================================================================== */
+
+// .wide {
+//   .page, .page__related {
+//     @include breakpoint($large) {
+//       padding-inline-end: 0;
+//     }
+
+//     @include breakpoint($x-large) {
+//       padding-inline-end: 0;
+//     }
+//   }
+// }
