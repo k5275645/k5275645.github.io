@@ -516,71 +516,63 @@ body {
    Related
    ========================================================================== */
 
-   .page__related-title {
-    margin-bottom: 10px;
-    font-size: $type-size-6;
-    text-transform: uppercase;
+/* __page.scss */
+
+.page__related-title {
+  margin-bottom: 1em;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+}
+
+.page__related {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+  
+  .grid__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  
-  .page__related {
-    @include clearfix();
-    float: left;
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid $border-color;
-  
-    @include breakpoint($large) {
-      float: none;
-      width: 100%;
-      padding-left: 1em;
-      padding-right: 1em;
+
+  .archive__item {
+    width: 100%;
+    margin-bottom: 1em;
+
+    @media (min-width: 48em) {
+      width: calc(50% - 0.5em);
     }
-  
-    & .grid__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  
-      @include breakpoint($large) {
-        margin: 0 -10px;
-      }
-  
-      .archive__item {
-        width: calc(50% - 20px);
-        margin-bottom: 20px;
-  
-        @include breakpoint($medium) {
-          width: calc(33.3333% - 20px);
-        }
-  
-        @include breakpoint($large) {
-          width: calc(25% - 20px);
-        }
-      }
+
+    @media (min-width: 64em) {
+      width: calc(33.333% - 0.667em);
     }
   }
-  
-  /*
-     Wide Pages
-     ========================================================================== */
-  
-  .wide {
-    .page,
-    .page__related {
-      @include breakpoint($large) {
-        padding-inline-end: 0;
-        padding-inline-start: 0;
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      @include breakpoint($x-large) {
-        padding-inline-end: 0;
-        padding-inline-start: 0;
-      }
-    }
+}
+
+.archive__item {
+  display: flex;
+  align-items: flex-start;
+
+  .archive__item-teaser {
+    flex: 0 0 150px;
+    margin-right: 1em;
   }
+
+  .archive__item-content {
+    flex: 1;
+    min-width: 0; // 이는 flex item이 너무 작아지는 것을 방지합니다
+  }
+}
+
+.archive__item-title {
+  margin-top: 0;
+  font-size: $type-size-5;
+}
+
+.archive__item-excerpt {
+  margin-top: 0;
+  font-size: $type-size-6;
+}
 
 // .page__related {
 //   @include clearfix();
