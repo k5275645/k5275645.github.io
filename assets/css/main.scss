@@ -7,27 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-// 여기서부터 커스텀 스타일 추가
-.archive__item-teaser {
-    img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-  }
-  
-  .page__hero {
-    position: relative;
-    margin-bottom: 2em;
-    @include clearfix;
-    -webkit-animation: $intro-transition;
-    animation: $intro-transition;
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
-  
-    &-image {
-      width: 100%;
-      height: auto;
-    }
-  }
