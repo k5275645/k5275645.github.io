@@ -10,7 +10,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
+<div class="{{ include.type | default: 'list' }}__item" style="margin-bottom: 10px;">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %} style="display: flex; align-items: flex-start;">
     {% if teaser %}
       <div class="archive__item-teaser" style="flex: 0 0 150px; margin-right: 15px;">
