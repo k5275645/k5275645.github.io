@@ -544,6 +544,18 @@ body {
   text-transform: uppercase;
 }
 
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*
    Wide Pages
    ========================================================================== */
