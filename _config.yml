@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Nocklog"
 title_separator          : "|"
-subtitle                 : "progressive overload" # site tagline that appears below site title in masthead
-name                     : "Your Name"
+subtitle                 : "낙지의 싱글벙글 블로깅 놀이" # site tagline that appears below site title in masthead
+name                     : "Nockz"
 description              : "Nockz Blog"
 url                      : "https://k5275645.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -42,7 +42,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 10 # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Nock"
+  name             : "낙지"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "github page blog"
   location         : "South Korea"
@@ -124,13 +124,13 @@ author:
       url: "mailto:k5275645@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://blog.naver.com/nocklog"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/k5275645"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/k5275645"
+      url: "https://www.instagram.com/nockg_/"
 
 # Site Footer
 footer:
@@ -140,7 +140,7 @@ footer:
       url: "https://github.com/k5275645"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/k5275645"
+      url: "https://www.instagram.com/nockg_/"
 
 
 # Reading Files
