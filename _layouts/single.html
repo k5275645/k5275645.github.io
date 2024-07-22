@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+{% raw %}
+{% if page.header.teaser and page.header.teaser != site.teaser %}
+  <div class="page__hero">
+    <img src="{{ page.header.teaser | relative_url }}" class="page__hero-image" alt="{{ page.title }}">
+  </div>
+{% endif %}
+{% endraw %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
