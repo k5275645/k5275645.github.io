@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "docs"
+published: false
 ---
 
 # spring - xml 셋팅과의 비교

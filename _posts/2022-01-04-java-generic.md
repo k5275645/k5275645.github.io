@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar: 
     nav: "docs"
+published: false
 ---
 
 > ## 제네릭 자료형 정의

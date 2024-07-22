@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar: 
     nav: "docs"
+published: false
 ---
 
 > ## 자료구조란 무엇인가? (Data Structure)

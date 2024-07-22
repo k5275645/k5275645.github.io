@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar: 
     nav: "docs"
+published: false
 ---
 
 ## 추상 클래스(상위 클래스)
