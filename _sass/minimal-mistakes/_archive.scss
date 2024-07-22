@@ -87,14 +87,14 @@
   }
   
   .archive__item-teaser {
-    flex: 0 0 150px;
+    flex: 0 0 150px;  // 썸네일 너비를 100px로 줄임
     margin-right: 1em;
     border-radius: $border-radius;
     overflow: hidden;
   
     img {
       width: 100%;
-      height: auto;
+      height: 150px;  // 썸네일 높이를 100px로 고정
       object-fit: cover;
     }
   }
@@ -172,6 +172,21 @@
       &:nth-child(2n + 2) {
         clear: none;
         margin-inline-start: gutter(of 10);
+      }
+    }
+
+    .archive__item {
+      flex-direction: column;  // 추가
+    }
+  
+    .archive__item-teaser {
+      flex: 0 0 auto;  // 추가
+      width: 100%;
+      margin-right: 0;  // 추가
+      margin-bottom: 1em;  // 추가
+  
+      img {
+        height: 200px;  // 수정
       }
     }
   
