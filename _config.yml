@@ -286,5 +286,7 @@ defaults:
       share: true
       related: true
       show_date : true
+      header:
+        teaser: /assets/images/hand.jpg  # 기본 썸네일 이미지
 
 date_format: "%Y-%m-%d"
