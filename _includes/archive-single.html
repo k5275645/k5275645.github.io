@@ -1,3 +1,9 @@
+{% if include.show_thumbnail and post.header.teaser %}
+  <div class="archive__item-teaser">
+    <img src="{{ post.header.teaser | relative_url }}" alt="">
+  </div>
+{% endif %}
+
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
