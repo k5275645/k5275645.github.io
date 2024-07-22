@@ -26,7 +26,7 @@ url                      : "https://k5275645.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "k5275645/k5275645.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/desert.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/cute_dog.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -287,6 +287,6 @@ defaults:
       related: true
       show_date : true
       header:
-        teaser: /assets/images/hand.png  # 기본 썸네일 이미지
+        teaser: /assets/images/cute_dog.png  # 기본 썸네일 이미지
 
 date_format: "%Y-%m-%d"
