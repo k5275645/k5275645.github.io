@@ -16,11 +16,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
+rtl                      : true # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Nocklog"
 title_separator          : "|"
-subtitle                 : "small positive action" # site tagline that appears below site title in masthead
-name                     : "nocknock"
-description              : "gitgub page practice"
+subtitle                 : "progressive overload" # site tagline that appears below site title in masthead
+name                     : "Your Name"
+description              : "Nockz Blog"
 url                      : "https://k5275645.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "k5275645/k5275645.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +105,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-6CETVND6RB"
     anonymize_ip         : false # true, false (default)
@@ -208,29 +209,13 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 7 # amount of posts to show
-paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Pagination with jekyll-paginate-v2
-# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-#   for configuration details
-pagination:
-  # Set enabled to true to use paginate v2
-  # enabled: true
-  debug: false
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+
+# Pagination with jekyll-paginate
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
